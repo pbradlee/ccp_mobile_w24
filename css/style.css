@@ -37,7 +37,7 @@ nav ul {
 }
 
 nav ul li {
-    color: #386138;
+    color: #000000;
     cursor: pointer;
     padding: 0.5rem;
     flex: auto;
@@ -45,17 +45,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: #000000;
+    color: #386138;
     text-decoration: underline;
 }
 
-li .inactive {
-    color: #386138;
-    text-decoration: none;
-}
-
 li .active {
-    color: #000000;
+    color: #386138;
     text-decoration: underline;
 }
 
@@ -63,7 +58,7 @@ li .active {
 body {
     background-color: rgb(247, 248, 236);
     font-family: "Inter", Helvetica, Arial, sans-serif;
-    font-size: clamp (1em, 2.5vw, 1.5em);
+    font-size: clamp(1em, 2.5vw, 1.5em);
     font-style: normal;
     line-height: 1.5;
 }
