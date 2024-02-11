@@ -37,7 +37,7 @@ nav ul {
 }
 
 nav ul li {
-    color: #000000;
+    color: #386138;
     cursor: pointer;
     padding: 0.5rem;
     flex: auto;
@@ -45,12 +45,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: #386138;
+    color: #000000;
     text-decoration: underline;
 }
 
 li .active {
-    color: #386138;
+    color: #000000;
     text-decoration: underline;
 }
 
@@ -58,14 +58,16 @@ li .active {
 body {
     background-color: rgb(247, 248, 236);
     font-family: "Inter", Helvetica, Arial, sans-serif;
-    font-size: clamp(1em, 2.5vw, 1.5em);
+    /* font-size: clamp(1em, 2.5vw, 1.5em); */
+    font-size: 1em;
     font-style: normal;
     line-height: 1.5;
 }
 
 h1 {
     font-family: "Inter", Helvetica, Arial, sans-serif;
-    font-size: clamp(2em, 5vw, 3em);
+    /* font-size: clamp(2em, 5vw, 3em); */
+    font-size: 3em;
     font-weight: bold;
     font-style: normal;
     color: rgb(10, 45, 10);
@@ -78,7 +80,8 @@ h1 {
 
 h2 {
     font-family: "Inter", Helvetica, Arial, sans-serif;
-    font-size: clamp(1.5em, 4vw, 2.25em);
+    /* font-size: clamp(1.5em, 4vw, 2.25em); */
+    font-size: 2em;
     font-weight: bold;
     font-style: normal;
     color: rgb(10, 45, 10);
@@ -90,7 +93,8 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(1.25em, 3.5vw, 1.875em);
+    /* font-size: clamp(1.25em, 3.5vw, 1.875em); */
+    font-size: 1.875em;
     font-family: "Inter", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -103,7 +107,8 @@ h3 {
 }
 
 p {
-    font-size: clamp(1em, 2.5vw, 1.5em);
+    /* font-size: clamp(1em, 2.5vw, 1.5em); */
+    font-size: 1.5em;
     font-family: "Inter", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -118,7 +123,8 @@ p {
 
 ol li {
     list-style-type: normal;
-    font-size: clamp(1em, 2.5vw, 1.5em);
+    /* font-size: clamp(1em, 2.5vw, 1.5em); */
+    font-size: 1.5em;
     font-family: "Inter", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -162,7 +168,8 @@ ul {
 }
 
 .grid-item {
-    font-size: clamp(1em, 2.5vw, 1.5em);
+    /* font-size: clamp(1em, 2.5vw, 1.5em); */
+    font-size: 1.5em;
     font-family: "Inter", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
