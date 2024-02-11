@@ -1,0 +1,326 @@
+/* ################# */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ################ Skip to main content ################ */
+.skip-to-main-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.skip-to-main-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/* ################ Navigation ################ */
+nav {
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #dde5b6;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+nav ul li {
+    color: #000000;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+}
+
+nav ul li:hover {
+    color: #386138;
+    text-decoration: underline;
+}
+
+li .active {
+    color: #386138;
+    text-decoration: underline;
+}
+
+/* ################ General ################ */
+body {
+    background-color: rgb(247, 248, 236);
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: (1em, 2.5vw, 1.5em);
+    font-style: normal;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: clamp(2em, 5vw, 3em);
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(10, 45, 10);
+    text-align: center;
+    margin-top: 1%;
+    margin-right: 0%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+}
+
+h2 {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: clamp(1.5em, 4vw, 2.25em);
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(10, 45, 10);
+    text-align: left;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+
+h3 {
+    font-size: clamp(1.25em, 3.5vw, 1.875em);
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(10, 45, 10);
+    text-align: left;
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+}
+
+p {
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+ol li {
+    list-style-type: normal;
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 1;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8%;
+}
+
+/* ################ List Grid ################ */
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: stretch;
+}
+
+.list-grid {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grid-item {
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border: 4px solid #19310f;
+    border-radius: 8%;
+    background-color:rgb(233, 246, 203);
+    padding: 20px;
+}
+
+/* ################ Homepage ################ */
+.featured-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 90%;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-gallery img {
+    width: 100%;
+}
+
+.featured-img:hover {
+    transform: scale(105%);
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+}
+
+
+/* ################ Pets ################ */
+/* .grid-container-pets {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    grid-gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: stretch;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+.image-column img {
+    max-width: 100%;
+} */
+
+.pet-text {
+    padding: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+    justify-content: center;
+}
+
+.additional-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 90%;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.additional-gallery img {
+    width: 100%;
+}
+
+/* ################ Recipes ################ */
+.grid-container-recipes, .grid-container-travel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    grid-gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: stretch;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+/* ################ Travel ################ */
+.travel-gallery-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.travel-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+    grid-gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: stretch;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+.caption {
+    text-align: center;
+    font-size: 1em;
+}
+
+/* ################ Footer ################ */
+footer {
+    background-color: #dde5b6;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.footer-text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+@media all and (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    .list-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .travel-gallery, .grid-container-recipes, .grid-container-travel{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animation {
+        visibility: hidden;
+        animation: none;
+    }
+  }
