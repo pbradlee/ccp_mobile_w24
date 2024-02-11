@@ -49,6 +49,11 @@ nav ul li:hover {
     text-decoration: underline;
 }
 
+li .inactive {
+    text-decoration: none;
+    color: #386138;
+}
+
 li .active {
     color: #000000;
     text-decoration: underline;
